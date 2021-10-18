@@ -1,0 +1,2 @@
+" Remap [esc] to jj
+inoremap jj <ESC>
