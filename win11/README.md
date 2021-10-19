@@ -32,6 +32,6 @@ $ $MY_REPOS/my-conf/win11/wsl/desktop.sh
 
 2. Launch Windows Remote Desktop RDP profile:
 
-```powershell
-> \\wsl$\Ubuntu-20.04\home\anne\source\repos\
+```bat
+> $MY_WIN_REPOS/my-conf/win11/rdp/start-rdp-desktop.rdp
 ```
