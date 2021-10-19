@@ -1,20 +1,27 @@
-" Anne's xlnt vim shortcuts
+"---------------------------------------
 "
-" Instructions: Txt added to test remote git repos
-" 	1. Clone bash-config repo under ~
-"	2. Link to ~/.vimrc
+" Filename:  $MY_REPOS/my-conf/vim/vimrc
+" Doc: ./README.md
+" Repo: 	git@github.com:annebrown/my-conf.git
+" Author:	Anne Brown
 "
-" jj - esc
+"---------------------------------------
+"
+" My fav vim shortcuts
+"
+" Instructions: 
+" 1. Clone git@github.com:annebrown/my-conf.git to $MY_REPOS/my-conf
+"	2. Link this file to ~/.vimrc:
+"     [~] $ ln -s $MY_REPOS/my-conf/vim/vimrc ~/.vimrc
+"
+" Highlights:
+" esc - mapped to jj
 " ;s - backup filename_date_time_backup
 "
-" Cygwin64 in Windows 8.1:
-"   Append to C:\Program Files (x86)\Vim\_vimrc
-"		set runtimepath=C:\cygwin64\home\anne\"
 
-" Ubuntu on Windows 10
+" Windows 11 WSL2
 "   Append to C:\Program Files (x86)\Vim\_vimrc
-"		let $PATH_TO_RCFILES='~\Google Drive\.config\rcfiles\'
-"		source $PATH_TO_RCFILES\.vimrc
+"		source $MY_REPOS\my-conf\vim\.vimrc
 
 " Load plugins
 

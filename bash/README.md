@@ -4,17 +4,17 @@ $MY_REPOS/my-conf/bash/README.md
 
 # Table of Contents
 
-[Description](Description)
+[Description](#description)
 
-[Dependancies and Pre-Requisites](Dependancies and Pre-Requisites)
+[Dependancies and Pre-Requisites](#dependancies-and-pre-requisites)
 
-[Usage](Usage)
+[Usage](#usage)
 
-    [Manual Setup](Manual Setup)
+    [Manual Setup](#manual-setup)
 
-    [Automatic Setup](Automatic Setup)
+    [Automatic Setup](#automatic-setup)
 
-[Making Changes](Making Changes)
+[Making Changes](#making-changes)
 
 # Description
 
