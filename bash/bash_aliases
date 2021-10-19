@@ -126,14 +126,13 @@
 #---------------------------------------
 # xplatform
 #   - My Repos
+		export MY_REPOS="~/source/repos"
+    	exprt MY_WIN_REPOS="C:/Users/anne/source/repos"
 #   - Editors
-
-    export MY_REPOS="~/source/repos"
-    exprt MY_WIN_REPOS="C:/Users/anne/source/repos"
     export EDITOR='vim' # make vim the default editor
 # MySql
     export VIMRUNTIME=/usr/share/vim/vim74
-        PATH=$PATH:$MY_REPOS/my-conf/bash/sh # Add my sys admin scripts to PATH
+    PATH=$PATH:$MY_REPOS/my-conf/bash/sh # Add my sys admin scripts to PATH
     export PATH
 
 #--------------------------------------------------
