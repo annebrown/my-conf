@@ -2,6 +2,20 @@
 
 $MY_REPOS/my-conf/bash/README.md       
 
+# Table of Contents
+
+[Description](Description)
+
+[Dependancies and Pre-Requisites](Dependancies and Pre-Requisites)
+
+[Usage](Usage)
+
+    [Manual Setup](Manual Setup)
+
+    [Automatic Setup](Automatic Setup)
+
+[Making Changes](Making Changes)
+
 # Description
 
 Sets my prompts, colors, aliases, env vars, os and host-specific overrides, app shortcuts, cronjobs, wol, git shortcuts, tail logs, etc.
@@ -10,7 +24,7 @@ Also sets my host-specific startup scripts, including services (ssh, rdp, X11, e
 
 # Dependancies and Pre-Requisites:
 
-- Repo: [git@github.com:annebrown/my-conf.git]( https://github.com/annebrown/bash-conf.git )   cloned to $MY_REPOS       
+- Repo: [git@github.com:annebrown/my-conf.git]( https://github.com/annebrown/bash-conf.git )  cloned to $MY_REPOS       
 - Git ssh keys exchanged
 - ~/.ssh/config (git-host: gh)
 
@@ -24,20 +38,62 @@ Also sets my host-specific startup scripts, including services (ssh, rdp, X11, e
 [~] $ ln -s ~/my-conf/bash/bash_aliases .bash_aliases     
 ```
 
-2. Startup Services 
+    See Also : $MY_REPOS/my-conf/vim/README.md
+
+```bash
+[~] $ ln -s ~/bash-conf/vim .vim
+[~] $ ln -s ~/bash-conf/vimrc .vimrc
+[~] $ ln -s ~/bash-conf/vrapperrc .vrapperrc
+```
+
+2. Prepare service and app startup scripts.  Run: 
    
-   Setup scripts and configs to load at startup:
-   
-   ```bash
-   startup-config   
-   ```
+   [To Do: Finish editing scripts and push to dynamic branch.]
+
+```bash
+prep_startup_scripts   
+```
 
 ## Automatic Setup
 
-This script automates the manual setup steps described above. vim
-
-Configures vim (.vimrc, ./vim, .vrapperrc, etc.,). These cover vim conf for bash, VSIX, VSCode, Chrome and oth dev envs.
+This script automates the manual setup steps described above. 
 
 ```bash
-config-static
+$ $MY_REPOS/my-conf/bash/sh/config-static.sh
 ```
+
+    or
+
+```bash
+$ config-static
+```
+
+# Making Changes
+
+1. Pull latest version:
+
+```bash
+[$MY_REPOS/my-conf]$ git pull
+```
+
+2. Open conf file:
+
+```bash
+vim $My_REPOS/my-conf/bash/bash_aliases
+```
+
+3. Backup prior to editing.  Enter `;s  This outputs a new backup file in the fmt:
+
+            `bash_aliases_<date>_<time>_backup`
+
+4. Edits
+
+5. Push Changes:
+
+```bash
+[$MY_REPOS/my-conf]$ git add .
+[$MY_REPOS/my-conf]$ git commit -m "Describe edits."
+[$MY_REPOS/my-conf]$ git push
+```
+
+6. Modify this file if rqd.
