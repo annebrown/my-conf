@@ -14,7 +14,7 @@ Also sets my host-specific startup scripts, including services (ssh, rdp, X11, e
 
 ## [vim](vim/README.md)
 
-Configures vim (.vimrc, ./vim, .vrapperrc, etc.,).  These cover vim conf for bash, VSIX, VSCode, Chrome and oth dev envs.    
+Configures vim (.vimrc, ./vim, .vrapperrc, etc.,).  These cover vim conf for bash, VSIX, VSCode, Chrome and oth dev envs.   Also audo loads vim scrips. 
 
 ## [win11](win11/README.md)
 
