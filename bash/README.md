@@ -1,6 +1,6 @@
-# README.md
+# Configure Bash
 
-$MY_REPOS/my-conf/bash/README.md       
+[My Repos](https://github.com/annebrown/?tab=repositories) > [my-conf](../README.md) > bash > README.md 
 
 # Table of Contents
 

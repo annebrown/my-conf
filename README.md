@@ -1,6 +1,6 @@
-# README.md
+# Configure My Dev Environments
 
-$MY_REPOS/my-conf/README.md       
+  [My Repos](https://github.com/annebrown/?tab=repositories) > my-conf > Index.md    
 
 # Description
 

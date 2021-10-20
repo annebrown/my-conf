@@ -79,22 +79,22 @@ in the background. Once the function returns the hidden Vim process
 terminates itself. This function takes a single argument which is a
 dictionary with the following key/value pairs:
 
- - **function** (required): The name of the Vim function to call inside
-   the child process (a string). I suggest using an [autoload][] function
-   for this, see below.
+- **function** (required): The name of the Vim function to call inside
+  the child process (a string). I suggest using an [autoload][] function
+  for this, see below.
 
- - **arguments** (optional): A list of arguments to pass to the function.
-   This list is serialized to a string using [string()][] and deserialized
-   using [eval()][].
+- **arguments** (optional): A list of arguments to pass to the function.
+  This list is serialized to a string using [string()][] and deserialized
+  using [eval()][].
 
- - **callback** (optional): The name of a Vim function to call in the
-   parent process when the child process has completed (a string).
+- **callback** (optional): The name of a Vim function to call in the
+  parent process when the child process has completed (a string).
 
- - **clientserver** (optional): If this is true (1) the child process will
-   notify the parent process when it has finished (the default is true).
-   This works using Vim's client/server support which is not always
-   available. As a fall back Vim's [CursorHold][] automatic command is
-   also supported (although the effect is not quite as instantaneous :-).
+- **clientserver** (optional): If this is true (1) the child process will
+  notify the parent process when it has finished (the default is true).
+  This works using Vim's client/server support which is not always
+  available. As a fall back Vim's [CursorHold][] automatic command is
+  also supported (although the effect is not quite as instantaneous :-).
 
 This functionality is experimental and non trivial to use, so consider
 yourself warned :-).
@@ -105,17 +105,17 @@ I'm making this functionality available in [vim-misc][] because I think it
 can be useful to other plug-ins, however if you are going to use it you
 should be aware of the following limitations:
 
- - Because of the use of multiple processes this functionality is only
-   suitable for 'heavy' tasks.
+- Because of the use of multiple processes this functionality is only
+  suitable for 'heavy' tasks.
 
- - The function arguments are serialized to a string which is passed to
-   the hidden Vim process as a command line argument, so the amount of
-   data you can pass will be limited by your operating environment.
+- The function arguments are serialized to a string which is passed to
+  the hidden Vim process as a command line argument, so the amount of
+  data you can pass will be limited by your operating environment.
 
- - The hidden Vim process is explicitly isolated from the user in several
-   ways (see below for more details). This is to make sure that the hidden
-   Vim processes are fast and don't clobber the user's editing sessions in
-   any way.
+- The hidden Vim process is explicitly isolated from the user in several
+  ways (see below for more details). This is to make sure that the hidden
+  Vim processes are fast and don't clobber the user's editing sessions in
+  any way.
 
 **Changes to how Vim normally works**
 
@@ -123,25 +123,25 @@ You have to be aware that the hidden Vim process is initialized in a
 specific way that is very different from your regular Vim editing
 sessions:
 
- - Your [vimrc][] file is ignored using the `-u NONE` command line option.
+- Your [vimrc][] file is ignored using the `-u NONE` command line option.
 
- - Your [gvimrc][] file (if you even knew it existed ;-) is ignored using
-   the `-U NONE` command line option.
+- Your [gvimrc][] file (if you even knew it existed ;-) is ignored using
+  the `-U NONE` command line option.
 
- - Plug-in loading is skipped using the `--noplugin` command line option.
+- Plug-in loading is skipped using the `--noplugin` command line option.
 
- - Swap files (see [swap-file][]) are disabled using the `-n` command line
-   option. This makes sure asynchronous Vim processes don't disturb the
-   user's editing session.
+- Swap files (see [swap-file][]) are disabled using the `-n` command line
+  option. This makes sure asynchronous Vim processes don't disturb the
+  user's editing session.
 
- - Your [viminfo][] file is ignored using the `-i NONE` command line
-   option. Just like with swap files this makes sure asynchronous Vim
-   processes don't disturb the user's editing session.
+- Your [viminfo][] file is ignored using the `-i NONE` command line
+  option. Just like with swap files this makes sure asynchronous Vim
+  processes don't disturb the user's editing session.
 
- - No-compatible mode is enabled using the `-N` command line option
-   (usually the existence of your vimrc script would have achieved the
-   same effect but since we disable loading of your vimrc we need to spell
-   things out for Vim).
+- No-compatible mode is enabled using the `-N` command line option
+  (usually the existence of your vimrc script would have achieved the
+  same effect but since we disable loading of your vimrc we need to spell
+  things out for Vim).
 
 **Use an auto-load function**
 
@@ -279,14 +279,14 @@ Register a [CursorHold][] event handler with a custom interval. This
 function takes a single argument which is a dictionary with the following
 fields:
 
- - **function** (required): The name of the event handler function (a
-   string).
+- **function** (required): The name of the event handler function (a
+  string).
 
- - **arguments** (optional): A list of arguments to pass to the event
-   handler function (defaults to an empty list).
+- **arguments** (optional): A list of arguments to pass to the event
+  handler function (defaults to an empty list).
 
- - **interval** (optional): The number of seconds between calls to the
-   event handler (defaults to 4).
+- **interval** (optional): The number of seconds between calls to the
+  event handler (defaults to 4).
 
 #### The `xolox#misc#cursorhold#autocmd()` function
 
@@ -923,16 +923,16 @@ Test comparison of version strings with `xolox#misc#version#at_least()`.
 Create a resumable timer object. This returns an object (a dictionary with
 functions) with the following "methods":
 
- - `start()` instructs the timer object to start counting elapsed time
-   (when a timer object is created it is not automatically started).
+- `start()` instructs the timer object to start counting elapsed time
+  (when a timer object is created it is not automatically started).
 
- - `stop()` instructs the timer object to stop counting elapsed time.
-   This adds the time elapsed since `start()` was last called to the
-   total elapsed time. This method will raise an error if called out of
-   sequence.
+- `stop()` instructs the timer object to stop counting elapsed time.
+  This adds the time elapsed since `start()` was last called to the
+  total elapsed time. This method will raise an error if called out of
+  sequence.
 
- - `format()` takes the total elapsed time and reports it as a string
-   containing a formatted floating point number.
+- `format()` takes the total elapsed time and reports it as a string
+  containing a formatted floating point number.
 
 Timer objects are meant to accurately time short running operations so
 they're dependent on Vim's [reltime()][] and [reltimestr()][] functions.
@@ -1004,7 +1004,6 @@ the plug-in's [homepage] []. If you like the script please vote for it on
 
 This software is licensed under the [MIT license] [].
 © 2015 Peter Odding &lt;<peter@peterodding.com>&gt;.
-
 
 [GitHub]: http://github.com/xolox/vim-misc
 [homepage]: http://peterodding.com/code/vim/misc

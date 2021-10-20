@@ -1,6 +1,6 @@
-# README.md
+# Configure Vim
 
-$MY_REPOS/my-conf/vim/README.md       
+[My Repos](https://github.com/annebrown/?tab=repositories) > [my-conf](../README.md) > vim > README.md      
 
 # Description
 
