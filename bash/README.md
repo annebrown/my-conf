@@ -3,17 +3,11 @@
 $MY_REPOS/my-conf/bash/README.md       
 
 # Table of Contents
-
 [Description](#description)
-
 [Dependancies and Pre-Requisites](#dependancies-and-pre-requisites)
-
 [Usage](#usage)
-
     [Manual Setup](#manual-setup)
-
     [Automatic Setup](#automatic-setup)
-
 [Making Changes](#making-changes)
 
 # Description
