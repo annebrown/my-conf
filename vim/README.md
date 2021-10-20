@@ -4,7 +4,7 @@ $MY_REPOS/my-conf/vim/README.md
 
 # Description
 
-Configures vim (.vimrc, ./vim, .vrapperrc, etc.,).  These cover vim conf for bash, VSIX, VSCode, Chrome and oth dev envs.    
+Configures vim (.vimrc, ./vim, .vrapperrc, etc.,).  These cover vim conf for bash, VSIX, VSCode, Chrome and oth dev envs.  Also audo loads vim scrips.  
 
 # Dependancies and Pre-Requisites:
 
