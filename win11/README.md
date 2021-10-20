@@ -4,7 +4,7 @@ $MY_REPOS/my-conf/win11/README.md
 
 # Description
 
-Configures my Windows 11 dev envs.    Includes scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
+Configures my Windows 11 dev envs.    Includes app profiles, startup scripts, scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
 
 # Dependancies and Pre-Requisites:
 
