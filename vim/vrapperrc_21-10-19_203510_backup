@@ -1,0 +1,19 @@
+"---------------------------------------
+"
+" Filename:  $MY_REPOS/my-conf/vim/vrapperrc
+" Doc: ./README.md
+" Repo: 	git@github.com:annebrown/my-conf.git
+" Author:	Anne Brown
+"
+"---------------------------------------
+"
+" My fav vim shortcuts for Eclipse IDE
+"
+" Instructions: 
+" 1. Clone git@github.com:annebrown/my-conf.git to $MY_REPOS/my-conf
+"	2. Link this file to ~/.vrapperrc
+"     [~] $ ln -s $MY_REPOS/my-conf/vim/vrapperrc ~/.vrapperrc
+"
+
+" Remap [esc] to jj
+inoremap jj <ESC>
