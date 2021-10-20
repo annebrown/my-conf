@@ -4,7 +4,7 @@ $MY_REPOS/my-conf/win11/README.md
 
 # Description
 
-Configures my Windows 11 dev envs.    
+Configures my Windows 11 dev envs.    Includes scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
 
 # Dependancies and Pre-Requisites:
 
@@ -15,6 +15,8 @@ Configures my Windows 11 dev envs.
 # Usage
 
 ## WSL2
+
+#### Start Xfce4-session in Remote Desktop (RDP)
 
 1. Start xfce4-session and start rdp service:
    
@@ -35,3 +37,25 @@ $ $MY_REPOS/my-conf/win11/wsl/desktop.sh
 ```bat
 > $MY_WIN_REPOS/my-conf/win11/rdp/start-rdp-desktop.rdp
 ```
+
+### Launch xfce4-terminal
+
+[To Do: Copy scripts from old repo .]
+
+Use $MY_WIN_REPOS\my-conf\win11\wsl2\xterm.bat:
+
+```batch
+> xterm
+```
+
+or
+
+alias in .bash_aliases:_
+
+```bash
+$ xterm
+```
+
+# PowerShell
+
+[To Do: Copy comf from old repo and document here.]
