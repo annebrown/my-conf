@@ -6,7 +6,7 @@
 
 Configures vim (.vimrc, ./vim, .vrapperrc, Vixen, cVim, etc.,) for bash, Eclipse, VSIX, VSCode, Chrome, Firefox and oth dev envs.    Also audo loads vim scripts.  
 
-See also:[ My Vim Ref](../../my-docs/vim/Index.md)
+See also:[ My Vim Ref](../../my-docs/README.md#vim)
 
 # Dependancies and Pre-Requisites:
 
