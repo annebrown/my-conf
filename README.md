@@ -21,3 +21,11 @@ Configures vim (.vimrc, ./vim, .vrapperrc, etc.,).  These cover vim conf for bas
 Startup scripts and profiles for WSL2
 
 **[`Note: Only use IDEs & editors supporting both line endings.`]**
+
+
+
+# Misc
+
+Related, useful links.
+
+[j-c-m's dotfiles](./common-dotfiles/README.md)

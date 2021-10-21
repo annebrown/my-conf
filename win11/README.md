@@ -2,11 +2,27 @@
 
 [My Repos](https://github.com/annebrown/?tab=repositories) > [my-conf](../README.md) > win11 > README.md
 
+# Table of Contents
+
+[Description](#description)     
+
+[Dependancies and Pre-Requisites](#dependancies-and-pre-requisites)   
+
+[Manual Setup](#manual-setup)    
+
+[WSL2](#wsl2)   
+
+       [ Start Xfce4-session in Remote Desktop (RDP)](# Start Xfce4-session in Remote Desktop (RDP))     
+
+        [Launch xfce4-terminal](#Launch xfce4-terminal)    
+
+[PowerShell](#PowerShell)    
+
 # Description
 
 Configures my Windows 11 dev envs.    Includes app profiles, startup scripts, scripts to start desktop sessions and indivudual apps.  Also configures dev apps conf, including Visual Studio, VSCode, PowerShell.  
 
-# Dependancies and Pre-Requisites:
+# Dependancies and Pre-Requisites
 
 - Repo: [git@github.com:annebrown/my-conf.git]( https://github.com/annebrown/bash-conf.git )   cloned to $MY_REPOS/my-conf       
 - Git ssh keys exchanged

@@ -1,7 +1,7 @@
-dotfiles
+j-c-m's dotfiles
 ========
 
-Just my dotfiles
+Source:
 
 ```
 wget https://github.com/j-c-m/dotfiles/tarball/master -O -|tar -xvzf - --no-same-owner  --no-same-permissions --strip-components 1 --exclude={README.md,LICENSE}
