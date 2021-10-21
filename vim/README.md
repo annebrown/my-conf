@@ -4,9 +4,7 @@
 
 # Description
 
-Configures vim (.vimrc, ./vim, .vrapperrc, etc.,).  These cover vim conf for bash, VSIX, VSCode, Chrome and oth dev envs.    Also audo loads vim scrips.  
-
-Lastly, this section covers vim extensions and add-ons for apps (Eclipse IDE, Firefox, Chrome) and an excellent vim .
+Configures vim (.vimrc, ./vim, .vrapperrc, Vixen, cVim, etc.,) for bash, Eclipse, VSIX, VSCode, Chrome, Firefox and oth dev envs.    Also audo loads vim scripts.  
 
 See also:[ My Vim Ref](../../my-docs/vim/Index.md)
 
