@@ -34,6 +34,6 @@ Firefox Add-On - [Vim Vixen](https://addons.mozilla.org/en-CA/firefox/addon/vim-
 
 Chrome Extension- [cVim](https://chrome.google.com/webstore/detail/cvim/ihlenndgcmojhcghmfjfneahoeklbjjh?hl=en)
 
-Vim - [Marktext markdown support]([GitHub - ckuelker/Marktext-vim: marktext support for vim](https://github.com/ckuelker/Marktext-vim)) with syncd preview scrolling
+Vim - [Marktext markdown support](https://github.com/ckuelker/Marktext-vim) with syncd preview scrolling
 
 Marktext - Vim support in development
