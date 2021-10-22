@@ -8,9 +8,9 @@
 
 [WSL2](#wsl2)   
 
-       [ Start Xfce4-session in Remote Desktop (RDP)](# Start Xfce4-session in Remote Desktop (RDP))     
+       [Start Xfce4-session in Remote Desktop (RDP)](#start-rdp-xfce4-session-in-remote-desktop)  
 
-        [Launch xfce4-terminal](#Launch xfce4-terminal)    
+        [Launch xfce4-terminal](#launch-xfce4-terminal)    
 
 [PowerShell](#PowerShell)    
 
@@ -20,7 +20,7 @@ Configures my Windows 11 dev envs.    Includes app profiles, startup scripts, sc
 
 ## WSL2
 
-#### Start Xfce4-session in Remote Desktop (RDP)
+#### Start RDP Xfce4-session in Remote Desktop
 
 1. Clone Repo: [git@github.com:annebrown/my-conf.git](https://github.com/annebrown/bash-conf.git) to $MY_REPOS/my-conf  
 
@@ -45,8 +45,6 @@ PS> \\wsl$\Ubuntu-20.04\$MY_WIN_REPOS\my-conf\win11\rdp\start-rdp-desktop.rdp
 ```
 
 ### Launch xfce4-terminal
-
-Use $MY_WIN_REPOS\my-conf\win11\wsl2\xterm.bat:
 
 ```batch
 > $MY_WIN_REPOS\my-conf\win11\wsl2\xterm.bat
