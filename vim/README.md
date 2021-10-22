@@ -6,13 +6,7 @@
 
 Configures vim (.vimrc, ./vim, .vrapperrc, Vixen, cVim, etc.,) for bash, Eclipse, VSIX, VSCode, Chrome, Firefox and oth dev envs.    Also audo loads vim scripts.  
 
-See also:[ My Vim Ref](../../my-docs/README.md#vim)
 
-# Dependancies and Pre-Requisites:
-
-- Repo: [git@github.com:annebrown/my-conf.git]( https://github.com/annebrown/bash-conf.git )   cloned to $MY_REPOS/my-conf       
-- Git ssh keys exchanged
-- ~/.ssh/config (git-host: gh)
 
 # Usage
 
