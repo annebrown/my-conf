@@ -126,11 +126,13 @@
 #  Env Vars - xplatform
 #---------------------------------------
 # xplatform
-#   - My Repos
-		export MY_REPOS="~/source/repos"
-    	exprt MY_WIN_REPOS="C:/Users/anne/source/repos"
+#   - My Repos   
+		export MY_REPOS="/home/anne/source/repos"  
+
+    	export MY_WIN_REPOS="C:/Users/anne/source/repos"  
+
 #   - Editors
-    export EDITOR='vim' # make vim the default editor
+	    export EDITOR='vim' # make vim the default editor
 # MySql
     export VIMRUNTIME=/usr/share/vim/vim74
     PATH=$PATH:$MY_REPOS/my-conf/bash/sh # Add my sys admin scripts to PATH
@@ -193,18 +195,18 @@
 # Overrides
 #--------------------------------------------------
 # Win11 WSL2
-	if [`hostname`="alap"]||[`hostname`="aserver"]||[`hostname`="anchor"]
+	if [ `hostname`="alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor" ]; then
 		
 		alias desktop="~/sh/wsl/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
 	fi
 # Ubuntu 
-	if [ `hostname` = "alap" ] || [ `hostname` = "aserver" ] || [`hostname` = "anchor"] || [`hostname` = "achromebook"]; then
+	if [ `hostname` = "alap" ] || [ `hostname` = "aserver" ] || [ `hostname` = "anchor "] || [ `hostname` = "achromebook" ]; then
 		alias cdcronjobs='cd /f/etc/crontab'
-		xhost local:anne > /dev/null # Allow crontab to access X display
+		# xhost local:anne > /dev/null # Allow crontab to access X display
 		alias king-wol="powerwake 04:54:53:01:AC:B1"
 	fi
 # iOS
-	if [ `hostname` = "aiPad" ]||[ `hostname` = "aiphone"]; then
+	if [ `hostname` = "aiPad" ] || [ `hostname` = "aiphone" ]; then
 		alias gocloud="cd ~/Documents/cloud"
 	fi
 # xOS
@@ -251,4 +253,7 @@ export LS_COLORS
 echo ============================ 
 date
 echo ============================
+
+
+
 

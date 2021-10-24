@@ -1,0 +1,5 @@
+# VSCODE Errors
+
+->0 in file /home/anne/source/repos/my-conf/bash/bash_aliases' at line 132 (\home\anne\source\repos\my-conf\bash\bash_aliases:132)
+##1 source("/home/anne/source/repos/my-conf/bash/bash_aliases") called from file /home/anne/.vscode-server/extensions/rogalmic.bash-debug-0.3.9/bashdb_dir/bashdb' at line 102 (\home\anne\.vscode-server\extensions\rogalmic.bash-debug-0.3.9\bashdb_dir\bashdb:102)
+##2 main("--quiet", "--tty", "/tmp/vscode-bash-debug-fifo-18191", "--tty_in", "/tmp/vscode-bash-debug-fifo-18191_in", "--library", "/home/anne/.vscode-server/extensions/rogalmic.bash-debug-0.3.9/bashdb_dir", "--", "/home/anne/source/repos/my-conf/bash/bash_aliases") called from file `/home/anne/.vscode-server/extensions/rogalmic.bash-debug-0.3.9/bashdb_dir/bashdb' at line 0 (\home\anne\.vscode-server\extensions\rogalmic.bash-debug-0.3.9\bashdb_dir\bashdb:0)```

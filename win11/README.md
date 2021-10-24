@@ -4,15 +4,15 @@
 
 # Table of Contents
 
-[Description](#description)     
+[Description](#description)        
 
-[WSL2](#wsl2)   
+[WSL2](#wsl2)      
 
-       [Start Xfce4-session in Remote Desktop (RDP)](#start-rdp-xfce4-session-in-remote-desktop)  
+       [Start Xfce4-session in Remote Desktop (RDP)](#start-rdp-xfce4-session-in-remote-desktop)     
 
-        [Launch xfce4-terminal](#launch-xfce4-terminal)    
+        [Launch xfce4-terminal](#launch-xfce4-terminal)       
 
-[PowerShell](#PowerShell)    
+[PowerShell](#PowerShell)       
 
 # Description
 
