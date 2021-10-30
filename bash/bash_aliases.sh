@@ -248,7 +248,17 @@
 			alias gocloud="cd /Users/Anne/cloud"
 	fi
 
-	#--------------------------------------------------
+
+
+
+#--------------------------------------------------
+# Scripts
+#--------------------------------------------------
+# Configure Intel compilers for wsl
+source /opt/intel/oneapi/setvars.sh
+
+
+#--------------------------------------------------
 # My prompts
 #--------------------------------------------------
 PS1="[\[\e[4;35m\]\u\[\e[m\]@\[\e[1;34m\]$HOSTNAME\[\e[m\]:\[\e[0;36m\]\w\[\e[0m\]] $ \[\e[0m\]"
@@ -268,4 +278,4 @@ date
 echo ============================
 
 
-cd # WSL2 opens in wrong dir 
+cd # WSL2 opens in wrong dir.  Bad json 
