@@ -1,6 +1,6 @@
 #---------------------------------------
 #
-# Filename:	$MY_REPOS/my-conf/bash/bash_aliases
+# Filename:	$MY_REPOS/my-conf/bash/bash_aliases.sh
 # Repo: 	git@github.com:annebrown/my-conf.git
 # Doc:		./README.md
 # Author:	Anne Brown
@@ -129,7 +129,6 @@
 # xplatform
 #   - My Repos   
 		export MY_REPOS="/home/anne/source/repos"  
-
     	export MY_WIN_REPOS="C:/Users/anne/source/repos"  
 
 #   - Editors
@@ -249,7 +248,7 @@
 			alias gocloud="cd /Users/Anne/cloud"
 	fi
 
-#--------------------------------------------------
+	#--------------------------------------------------
 # My prompts
 #--------------------------------------------------
 PS1="[\[\e[4;35m\]\u\[\e[m\]@\[\e[1;34m\]$HOSTNAME\[\e[m\]:\[\e[0;36m\]\w\[\e[0m\]] $ \[\e[0m\]"
@@ -269,4 +268,4 @@ date
 echo ============================
 
 
-
+cd # WSL2 opens in wrong dir 
