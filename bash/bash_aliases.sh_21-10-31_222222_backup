@@ -129,8 +129,8 @@
 #---------------------------------------
 # xplatform
 #   - My Repos   
-		export MY_REPOS="~/repos"  
-    	export MY_WIN_REPOS="C:/Users/anne/repos"  
+		export MY_REPOS="/home/anne/source/repos"  
+    	export MY_WIN_REPOS="C:/Users/anne/source/repos"  
 
 #   - Editors
 	    export EDITOR='vim' # make vim the default editor
@@ -205,9 +205,8 @@
 		export PATH=$ANDROID_HOME/tools/bin:$PATH
 		export PATH=$ANDROID_HOME/platform-tools:$PATH	
 		export PATH="$PATH:`pwd`/dev/flutter/bin"
-		alias godev="cd ~/repos/my-conf"
+		alias godev="cd ~/source/repos/my-conf"
 		alias connectaphone="adb connect 912.168.2.12:5555"	
-		cd # WSL2 opens in wrong dir.  Bad json
 	fi
 # Win11 WSL2
 	if [ `hostname`="alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor" ]; then
@@ -257,10 +256,8 @@
 # Scripts
 #--------------------------------------------------
 # Configure Intel compilers for wsl
-	if [ `hostname` = "alap" ]; then
+source /opt/intel/oneapi/setvars.sh
 
-		source /opt/intel/oneapi/setvars.sh
-	fi
 
 #--------------------------------------------------
 # My prompts
@@ -282,4 +279,4 @@ date
 echo ============================
 
 
- 
+cd # WSL2 opens in wrong dir.  Bad json 

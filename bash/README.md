@@ -21,8 +21,7 @@ Also sets my host-specific startup scripts, including services (ssh, rdp, X11, e
 ## Manual Setup
 
 1. Clone Repo: [git@github.com:annebrown/my-conf.git](https://github.com/annebrown/bash-conf.git) to $MY_REPOS/my-conf   
-   
-   
+
 2. Link files: 
 
 ```bash
@@ -70,8 +69,10 @@ $ config-static
 2. Open conf file:
 
 ```bash
-vim $My_REPOS/my-conf/bash/bash_aliases
+vim $My_REPOS/my-conf/bash/bash_aliases.sh
 ```
+
+    Note : .sh extension added to facilitate IDE bash File Associations.
 
 3. Backup prior to editing.  Enter ;s  This outputs a new backup file in the fmt:
 
