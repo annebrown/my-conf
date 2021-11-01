@@ -8,7 +8,7 @@
 [Usage](#usage)      
     [Manual Setup](#manual-setup)      
     [Automatic Setup](#automatic-setup)      
-[Making Changes](#making-changes)      
+[Backup Prior to Editing](#backup-prior-to-editing)      
 
 # Description
 
@@ -58,32 +58,8 @@ $ $MY_REPOS/my-conf/bash/sh/config-static.sh
 $ config-static
 ```
 
-# Making Changes
+# Backup Prior to Editing
 
-1. Pull latest version:
-
-```bash
-[$MY_REPOS/my-conf]$ git pull
-```
-
-2. Open conf file:
-
-```bash
-vim $My_REPOS/my-conf/bash/bash_aliases.sh
-```
-
-    Note : .sh extension added to facilitate IDE bash File Associations.
-
-3. Backup prior to editing.  Enter ;s  This outputs a new backup file in the fmt:
+Enter ;s  while editing in Vim.  This outputs a new backup file in the fmt:
 
             `bash_aliases_<date>_<time>_backup`
-
-4. Edits
-
-5. Push Changes:
-
-```bash
-[$MY_REPOS/my-conf]$ git add .
-[$MY_REPOS/my-conf]$ git commit -m "Describe edits."
-[$MY_REPOS/my-conf]$ git push
-```

@@ -4,7 +4,7 @@
 
 # Description
 
-This project configures my dev envs on all my devices.  It also contains scripts for starting required services and apps.     
+This project configures my dev env on a fresh OSs.  It also contains scripts for starting required services and apps.     
 
 ## [bash](bash/README.md)
 
