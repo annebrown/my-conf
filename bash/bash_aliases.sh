@@ -197,7 +197,7 @@
 #--------------------------------------------------
 # Mobile App Development
 #	WSL2
-	if [ `hostname` = "alap" ] || [ `hostname` = "aserver" ] || [ `hostname` = "anchor " ]; then
+	if [ `hostname` = "alap" ] || [ `hostname` = "alap-wsl" ] || [ `hostname` = "aserver" ] || [ `hostname` = "anchor-wsl" ]; then
 		export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 		export PATH=$PATH:$JAVA_HOME/bin
 		export ANDROID_HOME=~/Android
@@ -210,12 +210,14 @@
 		cd # WSL2 opens in wrong dir.  Bad json
 	fi
 # Win11 WSL2
-	if [ `hostname`="alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor" ]; then
+	if [ `hostname`="alap-wsl" ] || [ `hostname` = "alap" ] || [ `hostname`="aserver" ] || [ `hostname`="anchor-wsl" ]; then
 		
-		alias desktop="~/sh/wsl/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
+		alias desktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
+		alias desktopkde="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
+
 	fi
 # Ubuntu 
-	if [ `hostname` = "alap" ] || [ `hostname` = "aserver" ] || [ `hostname` = "anchor "] || [ `hostname` = "achromebook" ]; then
+	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl "] || [ `hostname` = "achromebook" ]; then
 		alias cdcronjobs='cd /f/etc/crontab'
 		# xhost local:anne > /dev/null # Allow crontab to access X display
 		alias king-wol="powerwake 04:54:53:01:AC:B1"
