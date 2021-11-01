@@ -12,7 +12,7 @@ This project configures my dev envs on all my devices.  It also contains scripts
 
 ## [win11](win11/README.md)
 
-    **[`Note: Only use IDEs & editors supporting both line endings.`]**
+See: [my-conf-win11](https://github.com/annebrown/my-conf-win11) for Windows 11 config.
 
 # Misc
 
