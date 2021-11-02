@@ -10,7 +10,7 @@ This project configures my dev env on a fresh OSs.  It also contains scripts for
 
 ## [vim](vim/README.md)
 
-## [win11](win11/README.md)
+## win11
 
 See: [my-conf-win11](https://github.com/annebrown/my-conf-win11) for Windows 11 config.
 
