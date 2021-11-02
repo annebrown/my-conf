@@ -18,45 +18,17 @@ Also sets my host-specific startup scripts, including services (ssh, rdp, X11, e
 
 # Usage
 
-## Manual Setup
-
 1. Clone Repo: [git@github.com:annebrown/my-conf.git](https://github.com/annebrown/bash-conf.git) to $MY_REPOS/my-conf   
 
-2. Link files: 
+2. Configure .bash_aliases: 
 
 ```bash
-[~] $ ln -s $MY_REPOS/my-conf/bash/bash_aliases .bash_aliases     
+[~] $ ln -s $MY_REPOS/my-conf/bash/bash_aliases.sh .bash_aliases     
 ```
 
     See Also : $MY_REPOS/my-conf/vim/README.md
 
-```bash
-[~] $ ln -s $MY_REPOS/my-conf/vim .vim
-[~] $ ln -s $MY_REPOS/my-conf/vimrc .vimrc
-[~] $ ln -s $MY_REPOS/my-conf/vrapperrc .vrapperrc
-```
-
-2. Prepare service and app startup scripts.  Run: 
-   
-   [To Do: Finish editing scripts and push to dynamic branch.]
-
-```bash
-prep_startup_scripts   
-```
-
-## Automatic Setup
-
-This script automates the manual setup steps described above. 
-
-```bash
-$ $MY_REPOS/my-conf/bash/sh/config-static.sh
-```
-
-    or
-
-```bash
-$ config-static
-```
+2. 
 
 # Backup Prior to Editing
 

@@ -1,45 +1,34 @@
 #---------------------------------------
 #
 # Filename:	$MY_REPOS/my-conf/bash/bash_aliases.sh
-# Note:		Added .sh to facilate IDE bash File Associations.
+# Purpose:	Bash config
 # Repo: 	git@github.com:annebrown/my-conf.git
 # Doc:		./README.md
 # Author:	Anne Brown
 #
 #---------------------------------------
-# Purpose:	Confingure xplatform bash dev envs and startup services on fresh OS.
+
 #---------------------------------------
-#	- env vars ($EDITOR, runtime vars, $PATH, $DISPLAY)
-#	- aliases
-#		- XPlatform and OS-specific
-#		- ssh shortcuts for my mobiles devices, computers, tablets, 
-#		  chromebook, svrs, etc., and freq used hosts
-#		- app shortcuts
-#		- cronjobs
-#		- wol
-#		- git shortcuts
-#		- tail logs
-#	- overrides
-#		- Mobile App Development
-#		- XPlatform and OS-specific (tests for OS and hostname)
-#	- my prompts
-#	- my colors
-#      
+# Usage:
 #---------------------------------------
-# CONTENTS
-#---------------------------------------
-# Instructions
-# - Dependancies and Pre-Requisitews
-# - Usage
-# 	- Manual Setup
-# 	- Automatic
-# - Making Changes
+# 	1. Clone repo (git@github.com:annebrown/my-conf.git) to $MY_REPOS/my-conf	
+#	2. Link file:
 #
-# Code
-# - Env Vars - xplatform
-# 	- My Repos
+#			[~] $ ln -s $MY_REPOS/bash_aliases .bash_aliases
+
+#	3. Backup Prior to Editing:
+#		Enter ;s before editing in Vim, to create a new backup file in the fmt:
+#			bash_aliases_<date>_<time>_backup
+#
+#---------------------------------------
+
+#---------------------------------------
+# Contents
+#---------------------------------------
+# Env Vars - xplatform
+# 	- My Repos Locations
 # 	- Editors
-# 	- Paths
+# 	- MySql
 # - Aliases
 # 	- XPlatform
 # 		- General
@@ -58,7 +47,8 @@
 #	- anchor
 #	- ESSiA
 # - Overrides:
-# 	- Win11 WSL2
+# 	- Mobile App Development
+# 	- WSL2
 #	- Ubuntu
 # 	- iOS
 # 	- xOS
@@ -67,68 +57,13 @@
 # - My Colors
 # - Visual Verification that .bash_aliases loaded 
 #
-#---------------------------------------
-# Dependancies and Pre-Requisites:
-#---------------------------------------
-# 	- Repo (git@github.com:annebrown/my-conf.git) cloned to $MY_REPOS	
-#	- Git ssh keys exchanged
-#	- ~/.ssh/config (git-host: bh)
-#
-#---------------------------------------
-# Usage:
-#---------------------------------------
-#
-# 	Manual Setup:
-# 
-#		1. Link files:
-#
-#			[~] $ ln -s ~/bash-conf/bash_aliases .bash_aliases
-#
-#			See Also : $MY_REPOS/my-conf/vim/README.md
-#
-#			[~] $ ln -s ~/bash-conf/vim .vim
-#			[~] $ ln -s ~/bash-conf/vimrc .vimrc
-#			[~] $ ln -s ~/bash-conf/vrapperrc .vrapperrc
-#
-#		2. Prepare service and app startup scripts.  Run:
-# 	
-#			[To Do: Finish editing scripts and push to dynamic branch.]
-#
-#			 $ prep_startup_scripts
-#
-#	Automatic Setup:
-#
-#		$ $MY_REPOS/my-conf/bash/sh/config-static.sh
-#
-#			or
-#
-#		$ config-static
-#
-#---------------------------------------
-# Making Changes:
-#---------------------------------------
-#	1. Pull latest version:
-#		[$MY_REPOS/my-conf]$ git pull		
-#	2. Open conf file:
-#		$ vim $My_REPOS/my-conf/bash/bash_aliases
-#	3. Backup prior to editing:
-#		;s  
-#      The script ";s" outputs a new file in the fmt:
-#			bash_aliases_<date>_<time>_backup
-#	4. Edits
-#	5. Pus  h Changes
-# 		[$MY_REPOS/my-conf]$ git add .
-# 		[$MY_REPOS/my-conf]$ git commit -m "Describe edits."
-# 		[$MY_REPOS/my-conf]$ git push
-#	6. Modify $MY_REPOS/my-conf/README.md if rqd.
-#
-#---------------------------------------
+
 
 #---------------------------------------
 #  Env Vars - xplatform
 #---------------------------------------
 # xplatform
-#   - My Repos   
+#   - My Repos Locations  
 		export MY_REPOS="~/repos"  
     	export MY_WIN_REPOS="C:/Users/anne/repos"  
 
@@ -205,7 +140,6 @@
 		export PATH=$ANDROID_HOME/tools/bin:$PATH
 		export PATH=$ANDROID_HOME/platform-tools:$PATH	
 		export PATH="$PATH:`pwd`/dev/flutter/bin"
-		alias godev="cd ~/repos/my-conf"
 		alias connectaphone="adb connect 912.168.2.12:5555"	
 		cd # WSL2 opens in wrong dir.  Bad json
 	fi
@@ -214,7 +148,7 @@
 		
 		alias desktop="~/repos/my-conf/win11/wsl2/desktop.sh" # Prepare xfce4 desktop for RDP Remote Access
 		alias desktopkde="~/repos/my-conf/win11/wsl2/desktopkde.sh" # Prepare xfce4 desktop for RDP Remote Access
-
+		alias godev="cd ~/repos/my-conf"
 	fi
 # Ubuntu 
 	if [ `hostname` = "alap" ] || [ `hostname` = "aserver-wsl" ] || [ `hostname` = "anchor-wsl "] || [ `hostname` = "achromebook" ]; then
@@ -251,9 +185,6 @@
 			alias clipboard="godropbox && mvim Clipboard.txt"
 			alias gocloud="cd /Users/Anne/cloud"
 	fi
-
-
-
 
 #--------------------------------------------------
 # Scripts
